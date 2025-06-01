@@ -1,4 +1,4 @@
-package org.example.uberentityservice.models;
+package org.mrstm.uberentityservice.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -22,6 +22,9 @@ public class Driver extends BaseModel {
 
     @Column(unique = true , nullable = false)
     private String licenseNumber;
+
+    @Column(unique = true , nullable = false)
+    private String aadharCardNumber;
 
     @OneToMany(mappedBy = "driver" , fetch = FetchType.LAZY)
     @Fetch(FetchMode.SUBSELECT)

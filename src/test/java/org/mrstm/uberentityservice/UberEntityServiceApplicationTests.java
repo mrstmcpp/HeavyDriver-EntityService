@@ -1,4 +1,4 @@
-package org.example.uberentityservice;
+package org.mrstm.uberentityservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

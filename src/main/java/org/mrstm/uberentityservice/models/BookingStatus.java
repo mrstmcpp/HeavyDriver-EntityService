@@ -1,4 +1,4 @@
-package org.example.uberentityservice.models;
+package org.mrstm.uberentityservice.models;
 
 public enum BookingStatus {
     SCHEDULED,
