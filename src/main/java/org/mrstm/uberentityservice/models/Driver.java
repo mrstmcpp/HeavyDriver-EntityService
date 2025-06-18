@@ -1,5 +1,7 @@
 package org.mrstm.uberentityservice.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
@@ -27,6 +29,7 @@ public class Driver extends BaseModel {
 
     @OneToMany(mappedBy = "driver" , fetch = FetchType.LAZY)
     @Fetch(FetchMode.SUBSELECT)
+    @JsonIgnore
     private List<Booking> bookings = new ArrayList<>();
 
     @Enumerated(value = EnumType.STRING)
@@ -51,4 +54,8 @@ public class Driver extends BaseModel {
 
     @OneToOne(mappedBy = "driver" , cascade = CascadeType.ALL)
     private Car car;
+
+    private Boolean isAvailable;
+
+
 }
