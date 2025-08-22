@@ -27,6 +27,7 @@ public class Driver extends BaseModel {
     @Column(unique = true , nullable = false)
     private String aadharCardNumber;
 
+    @Builder.Default
     @OneToMany(mappedBy = "driver" , fetch = FetchType.LAZY)
     @Fetch(FetchMode.SUBSELECT)
     @JsonIgnore

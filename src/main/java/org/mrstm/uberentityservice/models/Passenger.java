@@ -35,16 +35,13 @@ public class Passenger extends BaseModel {
     @Column(nullable = false)
     private String password;
 
+    @Builder.Default
     @OneToMany(mappedBy = "passenger")
     @JsonIgnore
     private List<Booking> bookings = new ArrayList<>();
 
     @OneToOne
     private Booking activeBooking;
-
-    @DecimalMin(value = "0.01", message = "Rating must be greater than 0.00")
-    @DecimalMax(value = "5.00" , message = "Rating must be less than 5.00")
-    private Double rating;
 
 
     @OneToOne

@@ -5,11 +5,16 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 
 @Entity
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+
 //@EntityListeners(AuditingEntityListener.class) //is a JPA annotation that lets you hook into the lifecycle of an entity—things like when it's created, updated, or deleted—by registering a listener class to respond to those events.
 //also need to add @EnableJpaAuditing in entry point of application...
 //alternative is to pass date in builder class.
