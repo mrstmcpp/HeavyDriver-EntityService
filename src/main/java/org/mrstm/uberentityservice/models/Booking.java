@@ -29,7 +29,6 @@ public class Booking extends BaseModel {
     private Date endTime;
     private Long totalDistance;
 
-
     @ManyToOne
     @JsonIgnore
     private Driver driver;
@@ -50,4 +49,7 @@ public class Booking extends BaseModel {
 
     @OneToOne(mappedBy = "booking")
     private DriverReview driverReview;
+
+    @OneToOne(mappedBy = "booking")
+    private OTP otp;
 }

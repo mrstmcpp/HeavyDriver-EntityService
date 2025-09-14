@@ -56,7 +56,7 @@ public class Driver extends BaseModel {
     @OneToOne(mappedBy = "driver" , cascade = CascadeType.ALL)
     private Car car;
 
-    private Boolean isAvailable;
+    private Long activeBooking;
 
 
 }
