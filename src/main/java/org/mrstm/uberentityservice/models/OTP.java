@@ -17,19 +17,15 @@ import java.util.Random;
 public class OTP extends BaseModel {
     private String code;
 
-    private String sentToNumber;
-
-    @OneToOne
-    @JoinColumn(name = "booking_id")
+    @OneToOne(mappedBy = "otp")   // booking owns the relationship
     private Booking booking;
 
 
-    public static OTP make(String phoneNumber, Booking booking) {
+    public static OTP make(Booking booking) {
         Random random = new Random();
         Integer x = random.nextInt(9000) + 1000; // ensures 4 digits
         return OTP.builder()
                 .code(x.toString())
-                .sentToNumber(phoneNumber)
                 .booking(booking)  // set the booking here
                 .build();
     }

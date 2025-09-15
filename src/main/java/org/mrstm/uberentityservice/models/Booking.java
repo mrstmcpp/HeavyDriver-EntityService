@@ -50,6 +50,7 @@ public class Booking extends BaseModel {
     @OneToOne(mappedBy = "booking")
     private DriverReview driverReview;
 
-    @OneToOne(mappedBy = "booking")
+    @OneToOne
+    @JoinColumn(name = "otp_id")   // foreign key lives in booking table
     private OTP otp;
 }
