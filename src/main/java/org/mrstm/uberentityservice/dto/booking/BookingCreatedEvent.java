@@ -1,6 +1,7 @@
 package org.mrstm.uberentityservice.dto.booking;
 
 import lombok.*;
+import org.mrstm.uberentityservice.models.ExactLocation;
 
 
 @Getter
@@ -11,6 +12,6 @@ import lombok.*;
 public class BookingCreatedEvent {
     private String bookingId;
     private String passengerId;
-    private double latitude;
-    private double longitude;
+    private ExactLocation pickupLocation;
+    private ExactLocation dropLocation;
 }

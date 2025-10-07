@@ -3,27 +3,27 @@
   <groupId>org.mrstm</groupId>
   <artifactId>UberEntityService</artifactId>
   <versioning>
-    <lastUpdated>20251007145534</lastUpdated>
+    <lastUpdated>20251007204911</lastUpdated>
     <snapshot>
-      <timestamp>20251007.145534</timestamp>
-      <buildNumber>3</buildNumber>
+      <timestamp>20251007.204911</timestamp>
+      <buildNumber>10</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.0.6-20251007.145534-3</value>
-        <updated>20251007145534</updated>
+        <value>0.0.6-20251007.204911-10</value>
+        <updated>20251007204911</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>module</extension>
-        <value>0.0.6-20251007.145534-3</value>
-        <updated>20251007145534</updated>
+        <value>0.0.6-20251007.204911-10</value>
+        <updated>20251007204911</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>plain</classifier>
         <extension>jar</extension>
-        <value>0.0.6-20251007.145534-3</value>
-        <updated>20251007145534</updated>
+        <value>0.0.6-20251007.204911-10</value>
+        <updated>20251007204911</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
