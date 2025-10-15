@@ -1,5 +1,6 @@
 package org.mrstm.uberentityservice.dto.location;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 @Getter
@@ -8,7 +9,10 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DriverLocation {
-    String driverId;
-    Double latitude;
-    Double longitude;
+    @NotNull
+    private String driverId;
+    @NotNull
+    private Double latitude;
+    @NotNull
+    private Double longitude;
 }

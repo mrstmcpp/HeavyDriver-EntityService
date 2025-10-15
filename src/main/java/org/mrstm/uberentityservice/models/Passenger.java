@@ -1,10 +1,7 @@
 package org.mrstm.uberentityservice.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import lombok.*;
@@ -40,7 +37,9 @@ public class Passenger extends BaseModel {
     @JsonIgnore
     private List<Booking> bookings = new ArrayList<>();
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "active_booking_id")
+    @JsonIgnore
     private Booking activeBooking;
 
 
