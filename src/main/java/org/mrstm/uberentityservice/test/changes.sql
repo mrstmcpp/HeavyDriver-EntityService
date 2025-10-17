@@ -1,0 +1,6 @@
+ALTER TABLE driver
+    MODIFY password VARCHAR(255) NOT NULL DEFAULT '';
+
+
+ALTER TABLE driver
+    MODIFY license_number VARCHAR(255) NULL DEFAULT NULL;
