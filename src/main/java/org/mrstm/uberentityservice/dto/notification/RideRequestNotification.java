@@ -9,6 +9,7 @@ import org.mrstm.uberentityservice.models.ExactLocation;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RideRequestNotification {
+    private String type;
     private String bookingId;
     private String passengerId;
     private ExactLocation pickupLocation;
