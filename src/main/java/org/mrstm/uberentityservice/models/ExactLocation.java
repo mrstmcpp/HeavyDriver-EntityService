@@ -13,4 +13,5 @@ import lombok.*;
 public class ExactLocation extends BaseModel {
     private Double latitude;
     private Double longitude;
+    private String address;
 }
