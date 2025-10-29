@@ -53,4 +53,8 @@ public class Booking extends BaseModel {
     @OneToOne
     @JoinColumn(name = "otp_id")   // foreign key lives in booking table
     private OTP otp;
+
+    @OneToOne(mappedBy = "booking", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Fare fareHistory;
+
 }

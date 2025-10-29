@@ -1,4 +1,4 @@
-package org.mrstm.uberentityservice.dto.driver;
+package org.mrstm.uberentityservice.dto.passenger;
 
 
 import lombok.*;
@@ -10,10 +10,10 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class BookingsByDriverResponseDto {
-    private String userId;
-    private List<BookingDTO> bookingList;
+public class BookingsByPassengerResponseDto {
+    private String passengerId;
+    private List<PassengerBookingDTO> bookingList;
     private int currentPage;
     private int totalPages;
     private long totalItems;
-}
+};
