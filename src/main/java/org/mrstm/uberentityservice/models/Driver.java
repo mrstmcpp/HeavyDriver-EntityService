@@ -60,7 +60,7 @@ public class Driver extends BaseModel {
      */
     @DecimalMin(value = "0.00", message = "Rating must be greater than 0.00")
     @DecimalMax(value = "5.00" , message = "Rating must be less than 5.00")
-    private double rating = 0.0;
+    private double rating;
 
 
     @OneToOne(mappedBy = "driver" , cascade = CascadeType.ALL)

@@ -7,6 +7,7 @@ import lombok.experimental.SuperBuilder;
 @Entity
 @Getter
 @Setter
+@SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "booking_review")

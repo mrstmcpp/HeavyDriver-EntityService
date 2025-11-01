@@ -8,6 +8,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CalculatedFareDTO {
+    private String startAddress;
+    private String endAddress;
     private double distance;
     private double duration;
     private double fare;

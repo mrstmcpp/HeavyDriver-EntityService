@@ -13,6 +13,7 @@ import java.util.Date;
 public class PassengerBookingDTO {
     private Long bookingId;
     private BookingStatus status;
+    private Double fare;
     private Date createdAt;
     private Long driverId;
     private String driverName;

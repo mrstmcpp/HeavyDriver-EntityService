@@ -1,0 +1,5 @@
+ALTER TABLE fare_rates
+    MODIFY COLUMN car_type VARCHAR(50) NOT NULL;
+
+ALTER TABLE fare
+    MODIFY COLUMN car_type VARCHAR(50) NOT NULL;

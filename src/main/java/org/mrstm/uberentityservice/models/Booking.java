@@ -55,6 +55,8 @@ public class Booking extends BaseModel {
     private OTP otp;
 
     @OneToOne(mappedBy = "booking", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Fare fareHistory;
+    private Fare fare;
 
+    @Enumerated(value = EnumType.STRING) //tells spring that it is an enum.
+    private CarType carType;
 }

@@ -17,6 +17,7 @@ public class Fare extends BaseModel{
     @JoinColumn(name = "booking_id" , nullable = false , unique = true)
     private Booking booking;
 
+    @Enumerated(value = EnumType.STRING) //tells spring that it is an enum.
     private CarType carType;
     private double distance;
     private double duration;
