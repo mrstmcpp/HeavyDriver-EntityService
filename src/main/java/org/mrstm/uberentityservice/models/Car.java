@@ -16,9 +16,6 @@ public class Car extends BaseModel{
     @Column(unique=true , nullable=false)
     private String plateNumber;
 
-    @ManyToOne
-    private Color color;
-
     @OneToOne
     private Driver driver;
 

@@ -1,6 +1,7 @@
 package org.mrstm.uberentityservice.models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -24,5 +25,6 @@ public class DriverDocument extends BaseModel {
 
     @ManyToOne
     @JoinColumn(name = "driver_verification_id" , nullable = false)
+    @JsonIgnore // prevent circular reference
     private DriverVerification driverVerification;
 }
