@@ -16,4 +16,5 @@ public class BookingReview extends Review{
     @OneToOne
     @JoinColumn(name = "booking_id" , nullable = false , unique = true)
     private Booking booking;
+
 }

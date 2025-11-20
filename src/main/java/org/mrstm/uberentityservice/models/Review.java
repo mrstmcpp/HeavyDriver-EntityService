@@ -44,6 +44,10 @@ public class Review extends BaseModel {
     private Double rating;
 
 
+    @OneToOne
+    @JoinColumn(name = "driver_id" , nullable = false)
+    private Driver driver;
+
 //    @OneToOne(cascade = {CascadeType.ALL}) //one booking one review
 //    //cascade type to prevent error related to one object should be in db to create another.
 //    //ie booking isn't being created without review object prepared in db

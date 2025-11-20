@@ -11,4 +11,5 @@ import org.mrstm.uberentityservice.models.DocumentType;
 public class AddDocumentDto {
     private DocumentType documentType;
     private String fileUrl;
+    private String fileName;
 }

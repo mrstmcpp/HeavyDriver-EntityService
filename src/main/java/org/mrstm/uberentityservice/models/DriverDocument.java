@@ -18,7 +18,7 @@ public class DriverDocument extends BaseModel {
     @Enumerated(value = EnumType.STRING)
     private VerificationStatus verificationStatus;
 
-    private String documentNumber;
+    private String fileName;
     private String documentUrl;
 
     private String verifiedBy;
